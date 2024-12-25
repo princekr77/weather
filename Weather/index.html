@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather forcast</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+</head>
+<body>
+    <div class="header">
+        <div class="icon">
+            <img src="weather.png" alt="">
+        </div>
+        <div class="sing_in">
+            <p>Sing In</p>
+        </div>
+    </div>
+    <div class="container">
+        <div class="choose">
+            <select class="state">
+                <option value="state">State</option>
+            </select>
+            <select class="district">
+                <option value="district">District</option>
+            </select>
+        </div>
+        <div class="content">
+            <div class="temperature">
+                <p class="temp"></p>
+                <p><i class="fa-solid fa-temperature-high"></i></p>
+                <p style="color: black; size: 10cm;"></p>
+            </div>
+            <div class="condition">
+                <p class="about"></p>
+                <img class="icon"></img>
+            </div>
+        </div>
+        <div class="info">
+            <div class="wind group">
+                <p class="heading">Wind(km/hr)</p>
+                <img src="wind.png" alt="wind">
+                <p class="speed"></p>
+                <p style="color: black;"></p>
+            </div>
+            <div class="humidity group">
+                <p class="heading">Humidity</p>
+                <img src="air.png" alt="humidity">
+                <p class="quantity"></p>
+                <p style="color: black;"></p>
+            </div>
+            <div class="pressure group">
+                <p class="heading">Pressure(mb)</p>
+                <img src="resilience.png" alt="pressure">
+                <p class="value"></p>
+                <p style="color: black;"></p>
+            </div>
+            <div class="uv group">
+                <p class="heading">UV - index</p>
+                <img src="uv-index.png" alt="uv">
+                <p class="result"></p>
+                <p style="color: black;"></p>
+            </div>
+        </div>
+        <div class="date">
+            <p class="update"></p>
+        </div>
+    </div>
+    <script src="state.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
